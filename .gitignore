@@ -2,3 +2,7 @@
 *.zip
 *.pth
 *.pt
+.venv/
+__pycache__/
+.env
+*.pyc

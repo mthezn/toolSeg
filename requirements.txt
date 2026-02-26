@@ -5,5 +5,13 @@ numpy
 matplotlib
 opencv-python
 Pillow
-timm
+
 tqdm
+albumentations
+pycocotools
+einops
+wandb
+
+datasets
+aiohttp
+timm

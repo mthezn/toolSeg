@@ -321,3 +321,12 @@ def mask_to_multiple_bboxes(mask):
             bboxes.append([float(x), float(y), float(w), float(h)])
 
     return bboxes
+
+
+def show_mask(mask, ax, random_color=False):
+    color = (np.concatenate([np.random.random(3), np.array([0.6])], axis=0)
+             if random_color
+             else np.array([30/255, 144/255, 255/255, 0.6]))
+    h, w = mask.shape[-2:]
+    ax.imshow(mask.reshape(h, w, 1) * color.reshape(1, 1, -1))
+
